@@ -24,21 +24,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://receptorgpt.streamlit.app/">
+  <a href="https://receptorai.streamlit.app/">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">ReceptorGPT</h3>
+<h3 align="center">ReceptorAI</h3>
 
   <p align="center">
     Discover TCR matches, antigen specificity, and structure with AI
     <br />
     <br />
-    <a href="https://receptorgpt.streamlit.app/">View Demo</a>
+    <a href="https://receptorai.streamlit.app/">View Demo</a>
     ·
-    <a href="https://github.com/naity/ReceptorGPT/issues">Report Bug</a>
+    <a href="https://github.com/naity/receptorai/issues">Report Bug</a>
     ·
-    <a href="https://github.com/naity/ReceptorGPT/issues">Request Feature</a>
+    <a href="https://github.com/naity/receptorai/issues">Request Feature</a>
   </p>
 </div>
 
@@ -72,9 +72,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![ReceptorGPT Screen Shot][product-screenshot]](https://receptorgpt.streamlit.app/)
+[![ReceptorAI Screen Shot][product-screenshot]](https://receptorai.streamlit.app/)
 
-[**ReceptorGPT**](https://receptorgpt.streamlit.app/) is an AI-powered app that uses Transformer-based protein language models to help you identify T cell receptor (TCR) matches, discover antigen specificity, and predict TCR structure. ReceptorGPT leverages embeddings to represent TCR sequences in a compact and informative way, allowing it to efficiently query a database of TCRs with known antigen specificity.
+[**ReceptorAI**](https://receptorai.streamlit.app/) is an AI-powered app that uses Transformer-based protein language models to help you identify T cell receptor (TCR) matches, discover antigen specificity, and predict TCR structure. ReceptorAI leverages embeddings to represent TCR sequences in a compact and informative way, allowing it to efficiently query a database of TCRs with known antigen specificity.
 
 
 * 🔍 Efficiently identify TCR matches
@@ -102,10 +102,10 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To launch the ReceptorGPT web app, please follow the steps below:
+To launch the ReceptorAI web app, please follow the steps below:
 1. Clone the repo:
 ```sh
-git clone https://github.com/naity/ReceptorGPT.git
+git clone https://github.com/naity/ReceptorAI.git
 ```
 
 2. Run the Streamlit app:
@@ -127,11 +127,11 @@ The `requirements.txt` file lists the Python packages that need to be installed 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-The ReceptorGPT app can be run as is. However, users can also update or customize the embedding database for the app using the following Jupyter Notebooks:
+The ReceptorAI app can be run as is. However, users can also update or customize the embedding database for the app using the following Jupyter Notebooks:
 
 1. **`antigen_specific_tcrs.ipynb`**: This notebook preprocesses TCR sequences from various public databases. Users can customize the TCRs they want to include in the database.
 
-2. **`build_index.ipynb`**: Run this notebook after executing `antigen_specific_tcrs.ipynb` to transform  TCRs into vectors and build the embedding database for the ReceptorGPT app. You may customize the underlying LLM for creating embeddings.
+2. **`build_index.ipynb`**: Run this notebook after executing `antigen_specific_tcrs.ipynb` to transform  TCRs into vectors and build the embedding database for the ReceptorAI app. You may customize the underlying LLM for creating embeddings.
 
 3. **`evaluation.ipynb`**: This notebook assesses the performance of the constructed TCR embedding database. TCRs used to build the database are queried against it, and the recall is 99.7%, indicating that the same TCR is returned 99.7% of the time.
 

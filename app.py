@@ -15,7 +15,7 @@ pc_index = pc.Index("tcrs")
 title_image_path = "images/logo.jpg"
 
 st.set_page_config(
-    page_title="ReceptorGPT",
+    page_title="ReceptorAI",
     page_icon=title_image_path,
 )
 
@@ -57,13 +57,13 @@ with left_col:
     st.image(str(title_image_path))
 with right_col:
     st.markdown(
-        '# <span style="color:#ff4500">ReceptorGPT</span>', unsafe_allow_html=True
+        '# <span style="color:#ff4500">ReceptorAI</span>', unsafe_allow_html=True
     )
     st.markdown("### Discover TCR matches, antigen specificity, and structure with AI")
 
 # app description
 st.markdown(
-    "<font size='4'> **ReceptorGPT** is an AI-powered app that uses Transformer-based protein language models to help you identify T cell receptor (TCR) matches, discover antigen specificity, and predict TCR structure. ReceptorGPT leverages embeddings to represent TCR sequences in a compact and informative way, allowing it to efficiently query a database of TCRs with known antigen specificity.</font>",
+    "<font size='4'> **ReceptorAI** is an AI-powered app that uses Transformer-based protein language models to help you identify T cell receptor (TCR) matches, discover antigen specificity, and predict TCR structure. ReceptorAI leverages embeddings to represent TCR sequences in a compact and informative way, allowing it to efficiently query a database of TCRs with known antigen specificity.</font>",
     unsafe_allow_html=True,
 )
 st.divider()
