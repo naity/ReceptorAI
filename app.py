@@ -27,8 +27,8 @@ with st.sidebar:
     st.title(":desktop_computer: Database")
     st.info(
         """
-        Number of TCRs: **34,099**  
-        Last updated: **05/17/2024**
+        Number of TCRs: **41,147**  
+        Last updated: **05/31/2024**
         """
     )
 
