@@ -112,7 +112,7 @@ def search_embedding(embedding, top_k, species, pc_index=None):
 def format_result(tcr_matches):
     """format response"""
     df = pd.DataFrame(tcr_matches["metadatas"])
-    df["Similarity Score"] = [min(1, 1 - d) for d in tcr_matches["scores"]]
+    df["Similarity Score"] = [min(1, score) for score in tcr_matches["scores"]]
 
     # rearrange columns
     df = df[
